@@ -1,0 +1,24 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\sim1 ID nmos.asc
+Start Time: Thu Sep 12 08:09:02 2024
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = modified trap
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+corriente1: id(m1)=0.00150897 at 0.5
+r1: 0.5/corriente1=331.352
+corriente2: id(m1)=0.002555 at 1
+r2: 1/corriente2=391.39
+corriente3: id(m1)=0.00296624 at 2
+r3: 2/corriente3=674.254
+corriente4: id(m1)=0.00305959 at 3.3
+r4: 3.3/corriente4=1078.58
+
+Total elapsed time: 0.146 seconds.
+

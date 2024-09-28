@@ -1,0 +1,27 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\Inversor\Inversor\Inversor3mA.asc
+Start Time: Tue Sep 17 20:37:46 2024
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = modified trap
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+vcruce: v(x)=v(a) AT 1.65003
+vila: v(a)=1.43569 at 1.43569
+viha: v(a)=1.85398 at 1.85398
+nmla: v(a)=1.66102 at 1.66102
+nmha: v(a)=1.66048 at 1.66048
+ria: viha-vila=0.418284
+isca: MAX(id(m2))=0.000939996 FROM 0 TO 3.3
+
+Total elapsed time: 0.053 seconds.
+

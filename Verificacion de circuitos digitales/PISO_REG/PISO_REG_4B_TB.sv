@@ -1,0 +1,52 @@
+`timescale 1ns/1ps
+
+
+module PISO_REG_4B_TB();
+
+reg LOAD, clk_tb;
+reg[3:0] D_in;
+reg serial_out ;
+
+
+PISO_REG_4B duv
+(
+  .clk(clk_tb),
+  .D_in(D_in),
+  .LOAD(LOAD),
+  .serial_out(serial_out)
+);
+
+
+
+initial
+begin
+  clk_tb = 1'b0;
+  D_in = 4'hB;
+  LOAD = 1'b1;
+  @(posedge clk_tb);
+  @(posedge clk_tb);
+  LOAD = 1'b0;
+  @(posedge clk_tb);
+  @(posedge clk_tb);
+  @(posedge clk_tb);
+  @(posedge clk_tb);
+  D_in = 4'h7;
+  LOAD = 1'b1;
+  @(posedge clk_tb);
+  @(posedge clk_tb);
+  LOAD = 1'b0;
+  @(posedge clk_tb);
+  @(posedge clk_tb);
+  @(posedge clk_tb);
+  @(posedge clk_tb);
+  #100
+  $stop;
+end
+
+always
+  #10 clk_tb = !clk_tb;
+
+
+
+
+endmodule

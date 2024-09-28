@@ -1,0 +1,343 @@
+\documentclass[conference]{IEEEtran}
+
+% Paquetes
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{cite}
+\usepackage{graphicx}
+
+% Título y autores
+\title{16-bit Adder in Verilog}
+\author{
+	\IEEEauthorblockN{Tomás Venegas de la Torre}
+	\IEEEauthorblockA{
+		\textit{Communicattions and Electronics Enginnering, Guadalajara University}\\
+		Guadalajara, México\\
+		tomas.venegas0034@alumnos.udg.mx
+	}
+}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{abstract}
+		This paper focuses the design of a 16-bit full adder using instances of 8-bit, 4-bit, 2-bit and 1-bit adders. The design was implemented in Verilog using Questasim software. In addition, a test bench was developed and executed to verify the circuit, demonstrating the successful implementation of the circuit.
+	\end{abstract}
+	
+	
+	\section{Objetives}
+	The purpose of this paper is to define and demostrate the operation of a 16-bit adder. It is intended to implement instance methodology to achive a modular design to explain the operation of the instances. 
+	
+	\section{Development}
+	A full adder is a circuit that performs the addition of two  binary numbers "a" and "b" and an input carry "cin". The truth table of the full adder can be seen in Table 1, as well as the equations characterizing the outputs s and cout and the block diagram in Fig.\ref{sumador1}.
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.25\textwidth]{sumador.png}
+		\caption{Full adder symbol}
+		\label{sumador1}
+	\end{figure}
+	
+	\begin{equation}
+		S = A \oplus B \oplus C_{in}
+	\end{equation}
+	
+	\begin{equation}
+	C_{out} = (AB) + (AC_{in}) + (BC_{in})
+	\end{equation}
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			\textbf{a} & \textbf{b} & \textbf{cin} & \textbf{cout} & \textbf{s} \\ \hline
+			0 & 0 & 0 & 0 & 0\\ \hline
+			0 & 0 & 1 & 0 & 1\\ \hline
+			0 & 1 & 0 & 0 & 1\\ \hline
+			0 & 1 & 1 & 1 & 0\\ \hline
+			1 & 0 & 0 & 0 & 1\\ \hline
+			1 & 0 & 1 & 1 & 0\\ \hline
+			1 & 1 & 0 & 1 & 0\\ \hline
+			1 & 1 & 1 & 1 & 1\\ \hline
+		\end{tabular}
+		
+		\caption{Full adder truth table}
+	\end{table}
+
+	A full adder could be use as a block in order to create a modular system. For example, as shown in Figure 2, a 4-bit adder is created connecting four single full adders. 
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.5\textwidth]{sumador_4.png}
+		\caption{4-bit adder diagram}
+		\label{sum__4}
+	\end{figure}
+	
+	However, the design will not be implemented as cascade connection of modules, but as instances of modules. A 2-bit adder is designed with 1-bit adders (\ref{sum_2}), a 4-bit adder with 2-bit adders (\ref{sum_4}), a 8-bit adder with 4-bit adder (\ref{sum_8}) and, finally, the 16-bit adder is implemented using instances of a 8-bit adder module (\ref{sum_16}).
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.3\textwidth]{sum_2b.png}
+		\caption{2-bit adder design using instances}
+		\label{sum_2}
+	\end{figure}
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.3\textwidth]{sum_4b.png}
+		\caption{4-bit adder design using instances}
+		\label{sum_4}
+	\end{figure}
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.3\textwidth]{sum_8b.png}
+		\caption{8-bit adder design using instances}
+		\label{sum_8}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.3\textwidth]{sum_16.png}
+		\caption{16-bit adder design using instances}
+		\label{sum_16}
+	\end{figure}
+	
+	The implementation in code of the adders is done using verilog, a project is generated in QuestaSim to create 5 modules and instantiate them together. The codes developed for each module are shown below.
+	
+	\vspace{12pt}
+	\textbf{1 bit module}
+	\begin{verbatim}
+		module fa_1 
+		( 
+		input a,b,cin, 
+		output s, cout 
+		); 
+		
+		assign {cout, s} = a + b + cin; 
+		endmodule 
+	\end{verbatim}
+	
+	\vspace{12pt}
+	\textbf{2 bit module}
+	\begin{verbatim}
+		module fa_2b
+		(
+		input wire a0,b0,a1,b1,cin2,
+		output wire s0,s1, cout2
+		);
+		
+		wire carry2;
+		
+		fa_1 LSB2
+		(
+		.a(a0),
+		.b(b0),
+		.cin(cin2),
+		.s(s0),
+		.cout(carry2)
+		);
+		
+		fa_1 MSB2
+		(
+		.a(a1),
+		.b(b1),
+		.cin(carry2),
+		.s(s1),
+		.cout(cout2)
+		);
+		
+		endmodule
+	\end{verbatim}
+	
+	\vspace{12pt}
+	\textbf{4 bit module}
+	\begin{verbatim}
+		module fa_4b
+		(
+		input wire a0,a1,a2,a3,
+		input wire b0,b1,b2,b3, cin4,
+		output wire s0,s1,s2,s3,
+		output wire cout4
+		);
+		
+		wire carry4;
+		
+		fa_2b LSB4
+		(
+		.a0(a0),
+		.a1(a1),
+		.b0(b0),
+		.b1(b1),
+		.s0(s0),
+		.s1(s1),
+		.cin2(cin4),
+		.cout2(carry4)
+		);
+		
+		fa_2b MSB4
+		(
+		.a0(a2),
+		.a1(a3),
+		.b0(b2),
+		.b1(b3),
+		.s0(s2),
+		.s1(s3),
+		.cin2(carry4),
+		.cout2(cout4)
+		);
+		
+		endmodule
+	\end{verbatim}
+	
+	
+\vspace{12pt}
+\textbf{8 bit module}
+\begin{verbatim}
+	module fa_8b
+	(
+	input wire a0,a1,a2,a3,a4,a5,a6,a7,
+	input wire b0,b1,b2,b3,b4,b5,b6,b7, cin8,
+	output wire s0,s1,s2,s3,s4,s5,s6,s7,
+	output wire cout8
+	);
+	
+	wire carry8;
+	
+	fa_4b LSB8
+	(
+	.a0(a0),
+	.a1(a1),
+	.a2(a2),
+	.a3(a3),
+	.b0(b0),
+	.b1(b1),
+	.b2(b2),
+	.b3(b3),
+	.s0(s0),
+	.s1(s1),
+	.s2(s2),
+	.s3(s3),
+	.cin4(cin8),
+	.cout4(carry8)
+	);
+	
+	fa_4b MSB8
+	(
+	.a0(a4),
+	.a1(a5),
+	.a2(a6),
+	.a3(a7),
+	.b0(b4),
+	.b1(b5),
+	.b2(b6),
+	.b3(b7),
+	.s0(s4),
+	.s1(s5),
+	.s2(s6),
+	.s3(s7),
+	.cin4(carry8),
+	.cout4(cout8)
+	);
+	
+	endmodule
+\end{verbatim}	
+	
+\vspace{12pt}
+\textbf{16 bit module}
+\begin{verbatim}
+	module fa_16b
+	(
+	input wire a0,a1,a2,a3,a4,a5,a6,a7,a8,
+	a9,a10,a11,a12,a13,a14,a15,
+	input wire b0,b1,b2,b3,b4,b5,b6,b7,b8,
+	b9,b10,b11,b12,b13,b14,b15,
+	output wire s0,s1,s2,s3,s4,s5,s6,s7,s8,
+	s9,s10,s11,s12,s13,s14,s15,
+	output wire cout16
+	);
+	
+	wire carry16;
+	
+	fa_8b LSB16
+	(
+	.a0(a0),
+	.a1(a1),
+	.a2(a2),
+	.a3(a3),
+	.a4(a4),
+	.a5(a5),
+	.a6(a6),
+	.a7(a7),
+	
+	.b0(b0),
+	.b1(b1),
+	.b2(b2),
+	.b3(b3),
+	.b4(b4),
+	.b5(b5),
+	.b6(b6),
+	.b7(b7),
+	
+	.s0(s0),
+	.s1(s1),
+	.s2(s2),
+	.s3(s3),
+	.s4(s4),
+	.s5(s5),
+	.s6(s6),
+	.s7(s7),
+	
+	.cin8(1'b0),
+	.cout8(carry16)
+	);
+	
+	fa_8b MSB16
+	(
+	.a0(a8),
+	.a1(a9),
+	.a2(a10),
+	.a3(a11),
+	.a4(a12),
+	.a5(a13),
+	.a6(a14),
+	.a7(a15),
+	
+	.b0(b8),
+	.b1(b9),
+	.b2(b10),
+	.b3(b11),
+	.b4(b12),
+	.b5(b13),
+	.b6(b14),
+	.b7(b15),
+	
+	.s0(s8),
+	.s1(s9),
+	.s2(s10),
+	.s3(s11),
+	.s4(s12),
+	.s5(s13),
+	.s6(s14),
+	.s7(s15),
+	
+	.cin8(carry16),
+	.cout8(cout16)
+	);
+	
+	endmodule
+\end{verbatim}
+	
+	To demonstrate the correct functionality of the design, a test bench is applied for the 16-bit adder. A series of values for \textit{a[15:0]} and \textit{b[15:0]} are proposed, these values have to explore critical situations where is known the circuit can produce an error. For example, a mishandling of carry signal in the modules.
+	
+	
+	
+	
+	
+
+
+	
+\end{document}

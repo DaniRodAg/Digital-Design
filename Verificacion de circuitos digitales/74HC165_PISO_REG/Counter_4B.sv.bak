@@ -1,0 +1,23 @@
+module Couner_4B(
+  input reg[0:3] D_in,
+  input reg LOAD, ASC_DESC,
+  input reg clk, rst,
+  output reg[0:3] COUNT,
+);
+
+reg [0:3] D;
+
+always@(posedge clk or posedge clken)
+begin
+  if (~LOAD)
+  begin
+    D <= D_in;
+  end 
+  else if (~clk)
+  begin
+    D <= D >> 1;
+  end
+
+end
+
+endmodule

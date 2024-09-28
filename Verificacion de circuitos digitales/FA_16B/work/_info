@@ -1,0 +1,276 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Daniel/7mo/Verificacion/FA_8B
+T_opt
+!s110 1725773096
+V^==boKDO:bIazS2HH:K<J0
+04 8 4 work FA_4B_TB fast 0
+=1-58112219c1c6-66dd3528-19b-19c8
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.4e;61
+R0
+T_opt1
+!s110 1725774131
+VbKN3K8YW9j^_=HUGfXn0M1
+04 8 4 work FA_8B_TB fast 0
+=1-58112219c1c6-66dd3933-9a-5384
+R1
+n@_opt1
+R2
+R0
+T_opt2
+!s110 1725774739
+V3gI=lb?61mgk75hRLHcAc2
+04 9 4 work FA_16B_TB fast 0
+=1-58112219c1c6-66dd3b93-12f-4544
+R1
+n@_opt2
+R2
+vFA1
+Z3 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z4 !s110 1725773080
+!i10b 1
+!s100 E4o>Sa3kB[L3d;PC7^<Tn1
+I9SN3WM>9LFIg0g9iK3Nm@3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s105 FA1_sv_unit
+S1
+Z6 dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B
+w1724514432
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA1.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA1.sv
+L0 1
+Z7 OL;L;10.4e;61
+r1
+!s85 0
+31
+Z8 !s108 1725773080.000000
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA1.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA1.sv|
+!i113 0
+Z9 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@f@a1
+vFA1_tb
+R3
+R4
+!i10b 1
+!s100 2;O_Hz>?XXcZ6<GAW7h;81
+IgAc:dHnZO@?UEZ;5f[WOF1
+R5
+!s105 FA1_tb_sv_unit
+S1
+R6
+w1725769986
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA1/FA1_tb.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA1/FA1_tb.sv
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA1/FA1_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA1/FA1_tb.sv|
+!i113 0
+R9
+n@f@a1_tb
+vFA_16B
+R3
+R4
+!i10b 1
+!s100 N3:`2X=Co@>CELjo=[b[_1
+Ik08U4V?V=?OHj5O]7XK4M3
+R5
+!s105 FA_16B_sv_unit
+S1
+R6
+w1725600198
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B.sv
+L0 4
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B.sv|
+!i113 0
+R9
+n@f@a_16@b
+vFA_16B_TB
+R3
+R4
+!i10b 1
+!s100 hZbzNRCSN1HM310?2a7_S0
+Il?A]Z1:8B0o?^IZUe[89k2
+R5
+!s105 FA_16B_TB_sv_unit
+S1
+R6
+w1725604035
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B_TB.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B_TB.sv
+L0 4
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B_TB.sv|
+!i113 0
+R9
+n@f@a_16@b_@t@b
+vFA_2b
+R3
+Z10 !s110 1725773079
+!i10b 1
+!s100 JY_eHC1PgCzVMQQzY]Fl62
+Il:Y75bk=F=j9IUz?mMf_Y1
+R5
+!s105 FA_2b_sv_unit
+S1
+R6
+w1725769935
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_2b.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_2b.sv
+L0 4
+R7
+r1
+!s85 0
+31
+Z11 !s108 1725773079.000000
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_2b.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_2b.sv|
+!i113 0
+R9
+n@f@a_2b
+vFA_2b_TB
+R3
+R4
+!i10b 1
+!s100 alO]CToLTN:>1YTJGbUjO1
+I?I[@<i<lb_iYQRi6;8a]L2
+R5
+!s105 FA_2b_tb_sv_unit
+S1
+R6
+w1725771088
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_2b/FA_2b_tb.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_2b/FA_2b_tb.sv
+L0 4
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_2b/FA_2b_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_2b/FA_2b_tb.sv|
+!i113 0
+R9
+n@f@a_2b_@t@b
+vFA_4B
+R3
+R10
+!i10b 1
+!s100 2l=oS0lh1OLDUT`j2AoWA2
+IcWSRBoTnoNMbn7I<zDiR;2
+R5
+!s105 FA_4B_sv_unit
+S1
+R6
+w1725598961
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_4B.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_4B.sv
+L0 4
+R7
+r1
+!s85 0
+31
+R11
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_4B.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_4B.sv|
+!i113 0
+R9
+n@f@a_4@b
+vFA_4B_TB
+R3
+R4
+!i10b 1
+!s100 :fZDCbLaAfIhl[2GimUjP1
+I2PBCdjQ@_1;PMj6N5LdH=0
+R5
+!s105 FA_4B_TB_sv_unit
+S1
+R6
+w1725598287
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_4B_TB.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_4B_TB.sv
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_4B_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_4B_TB.sv|
+!i113 0
+R9
+n@f@a_4@b_@t@b
+vFA_8B
+R3
+R4
+!i10b 1
+!s100 8gd72hA90m0>f14Hk]H7d3
+I^7albUQ@N8M6K]nh_F?`Y0
+R5
+!s105 FA_8B_sv_unit
+S1
+R6
+w1725598931
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_8B.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_8B.sv
+L0 4
+R7
+r1
+!s85 0
+31
+R11
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_8B.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_8B.sv|
+!i113 0
+R9
+n@f@a_8@b
+vFA_8B_TB
+R3
+!s110 1725773081
+!i10b 1
+!s100 HQcJ3C]gm`F8P<TDE2]M92
+I:TP:8VgYc[_Wlh_`=E1:T1
+R5
+!s105 FA_8B_TB_sv_unit
+S1
+R6
+w1725602818
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_8B_TB.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_8B_TB.sv
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_8B_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_8B_TB.sv|
+!i113 0
+R9
+n@f@a_8@b_@t@b

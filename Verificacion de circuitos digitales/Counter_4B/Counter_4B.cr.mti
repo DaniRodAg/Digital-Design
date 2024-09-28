@@ -1,0 +1,15 @@
+{C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module Counter_4B
+
+Top level modules:
+	Counter_4B
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B_TB.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B_TB.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module Counter_4B_TB
+
+Top level modules:
+	Counter_4B_TB
+
+} {} {}}

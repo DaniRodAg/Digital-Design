@@ -1,0 +1,113 @@
+C:/Daniel/7mo/Verificacion/FA_16B/FA_8B.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_16B/FA_8B.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_8B
+
+Top level modules:
+	FA_8B
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_16B
+
+Top level modules:
+	FA_16B
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA1.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA1.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA1
+
+Top level modules:
+	FA1
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_4B_TB.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_4B_TB.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_4B_TB
+
+Top level modules:
+	FA_4B_TB
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_2b.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_2b.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_2b
+
+Top level modules:
+	FA_2b
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_4B.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_4B.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_4B
+
+Top level modules:
+	FA_4B
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B_TB.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_16B_TB.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_16B_TB
+
+Top level modules:
+	FA_16B_TB
+
+} {} {}} C:/Daniel/7mo/Verificacion/FA_16B/FA1.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_16B/FA1.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA1
+
+Top level modules:
+	FA1
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_8B_TB.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_8B/FA_8B_TB.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_8B_TB
+
+Top level modules:
+	FA_8B_TB
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA1/FA1_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA1/FA1_tb.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA1_tb
+
+Top level modules:
+	FA1_tb
+
+} {} {}} C:/Daniel/7mo/Verificacion/FA_16B/FA_2b.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_16B/FA_2b.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_2b
+
+Top level modules:
+	FA_2b
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_8B.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_16B/FA_8B.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_8B
+
+Top level modules:
+	FA_8B
+
+} {} {}} C:/Daniel/7mo/Verificacion/FA_16B/FA_16B_TB.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_16B/FA_16B_TB.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_16B_TB
+
+Top level modules:
+	FA_16B_TB
+
+} {} {}} C:/Daniel/7mo/Verificacion/FA_16B/FA_4B.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_16B/FA_4B.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_4B
+
+Top level modules:
+	FA_4B
+
+} {} {}} {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_2b/FA_2b_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/FA_2b/FA_2b_tb.sv}
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_2b_TB
+
+Top level modules:
+	FA_2b_TB
+
+} {} {}} C:/Daniel/7mo/Verificacion/FA_16B/FA_16B.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_16B/FA_16B.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_16B
+
+Top level modules:
+	FA_16B
+
+} {} {}}

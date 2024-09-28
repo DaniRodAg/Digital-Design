@@ -1,0 +1,43 @@
+\title{Introducci\'on a Spice}
+%\date{2024-08-21}
+%\author{Daniel}
+%\usepackage[spanish]{babel}
+%\usepackage[latin1]{inputenc}
+\documentclass{article}
+\begin{document}
+	%\textbf{\large{}}
+	\section*{Introducci\'on a Spice}
+	
+	SPICE es un programa de simulaci\'on con un enfasis en circuitos integrados. Todos los motores de SPICE utilizan un archivo de texto o lista de redes para las entradas de simulaci\'on.
+	
+	\subsection*{¿C\'omo generar una lista de redes?}
+	Para generar una lista de redes se puede hacer desde programas como notepad o wordpad, lo importante es la extensión del archivo (*.cir, *.sp o *.spi) que es lo que busca SPICE.
+	\subsection*{Punto de operación}
+	EL primer analisis de simulación de spice será el .op o punto de operación; La salida de este tipo de simulación no es gráfica sino mas bien una lista de parametros en los nodos y componentes, como voltajes y corrientes.
+	\\SPICE ignora la primer línea ya que es una linea de titulo; Un comentario comienza con *, pero los comandos comienzan con *\#.
+	\\Los comandos:
+	\\ **\#destroy all: Limpia la información de simulaciones anteriores.
+	\\ **\#run: Corre la simulación.
+	\\ **\#print all: Muestra los resultados de la simulación.
+	\\Es importante hacer notar que se les pueden asignar nombres a los nodos, lo cual facilita el análisis de circuitos más complejos.
+	\subsection*{Análisis de la Función de transferencia}
+	El análisis de la función de transferencia sirve para encontrar las características transitorias de los elementos de un circuito. Para esto la lista de redes en lugar de ser .op será .TF.
+	\subsection*{Análisis en DC}
+	Los dos análisis anteriores tienen la característica de que su entrada es constante. En un análisis en DC, la entrada es variada y los voltajes y corrientes son simulados y en lugar de imprimir podemos graficarlos con el comando:
+	*\#plot Vin Vout
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}

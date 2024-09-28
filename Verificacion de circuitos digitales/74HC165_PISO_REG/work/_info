@@ -1,0 +1,107 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Daniel/7mo/Verificacion/FA_2b
+T_opt
+!s110 1725726065
+VWMLZ<0;SG4^f8R2@LWY_f2
+Z1 04 14 4 work PISO_REG_4B_TB fast 0
+=1-7c8ae18cba30-66dc7d71-8c-6b8
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z3 OL;O;10.4e;61
+R0
+T_opt1
+!s110 1725723957
+Vnl[eADGn6Nn@RgM>8J2d@3
+R1
+=1-7c8ae18cba30-66dc7534-3c4-2398
+o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1726372816
+VH8aW;SRL8B_X2^PKJOj3N2
+R1
+=1-7c8ae18cba30-66e65bcf-329-4c50
+R2
+n@_opt2
+R3
+vPISO_REG_4B
+Z4 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z5 !s110 1726372804
+!i10b 1
+!s100 2]k^8SF=BIiZ:fflR8fol0
+IhKTza@YFALiWKK]LDKYJc1
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+!s105 PISO_REG_4B_sv_unit
+S1
+Z7 dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG
+w1726363077
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG/PISO_REG_4B.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG/PISO_REG_4B.sv
+L0 1
+Z8 OL;L;10.4e;61
+r1
+!s85 0
+31
+Z9 !s108 1726372804.000000
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG/PISO_REG_4B.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG/PISO_REG_4B.sv|
+!i113 0
+Z10 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@p@i@s@o_@r@e@g_4@b
+vPISO_REG_4B_TB
+R4
+R5
+!i10b 1
+!s100 RgUo76`RNmI7Vk73gIAQg2
+INi2FUUNnTG2kQK@[DbL7g0
+R6
+!s105 PISO_REG_4B_TB_sv_unit
+S1
+R7
+w1726372802
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG/PISO_REG_4B_TB.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG/PISO_REG_4B_TB.sv
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG/PISO_REG_4B_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG/PISO_REG_4B_TB.sv|
+!i113 0
+R10
+n@p@i@s@o_@r@e@g_4@b_@t@b
+XPISO_REG_4B_TB_sv_unit
+R4
+V>70RED^^VY=VP[Q@=jOFa0
+r1
+!s85 0
+31
+!i10b 1
+!s100 IR60C:3LWO>oRMk`TA=dn2
+I>70RED^^VY=VP[Q@=jOFa0
+!i103 1
+S1
+dC:/Daniel/7mo/Verificacion/PISO_REG
+w1725130039
+8C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv
+FC:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv
+L0 1
+R8
+!s108 1725130041.000000
+!s107 C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv|
+!i113 0
+R10
+n@p@i@s@o_@r@e@g_4@b_@t@b_sv_unit

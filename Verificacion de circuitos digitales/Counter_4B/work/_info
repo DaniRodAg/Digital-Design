@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/74HC165_PISO_REG
+T_opt
+!s110 1726983131
+V>6bl805`9idlg8hmUjYd13
+Z1 04 13 4 work Counter_4B_TB fast 0
+=1-7c8ae18cba30-66efabdb-18c-47c0
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.4e;61
+T_opt1
+!s110 1726969775
+VeQz3?1=8oCFLHVedZF<n01
+R1
+=1-7c8ae18cba30-66ef77af-22a-4f94
+o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R2
+R0
+vCounter_4B
+Z3 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1726983122
+!i10b 1
+!s100 X1?;ff8B6mGl;i9PFKiC;0
+I6SAKNhcPbSRRY`kbML_j52
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Counter_4B_sv_unit
+S1
+Z5 dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B
+w1726982604
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B.sv
+L0 1
+Z6 OL;L;10.4e;61
+r1
+!s85 0
+31
+!s108 1726983122.000000
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@counter_4@b
+vCounter_4B_TB
+R3
+!s110 1726983121
+!i10b 1
+!s100 Z<0UD5]Z4HP[do>nBgAG?1
+ION7hbjD5;bz:4h?Se<[Tj0
+R4
+!s105 Counter_4B_TB_sv_unit
+S1
+R5
+w1726983120
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B_TB.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B_TB.sv
+L0 4
+R6
+r1
+!s85 0
+31
+!s108 1726983121.000000
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B/Counter_4B_TB.sv|
+!i113 0
+R7
+n@counter_4@b_@t@b

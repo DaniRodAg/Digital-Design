@@ -1,0 +1,99 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Daniel/7mo/Verificacion/FA_2b
+T_opt
+!s110 1725726065
+VWMLZ<0;SG4^f8R2@LWY_f2
+Z1 04 14 4 work PISO_REG_4B_TB fast 0
+=1-7c8ae18cba30-66dc7d71-8c-6b8
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.4e;61
+R0
+T_opt1
+!s110 1725723957
+Vnl[eADGn6Nn@RgM>8J2d@3
+R1
+=1-7c8ae18cba30-66dc7534-3c4-2398
+o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R2
+R0
+vPISO_REG_4B
+Z3 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z4 !s110 1725727104
+!i10b 1
+!s100 ?0S<CMlK=`JbNc`PV<l0f0
+I]Yg0ML65nA8j`8l6VZdXl3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s105 PISO_REG_4B_sv_unit
+S1
+Z6 dC:/Daniel/7mo/Verificacion/PISO_REG
+w1725722240
+8C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B.sv
+FC:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B.sv
+L0 1
+Z7 OL;L;10.4e;61
+r1
+!s85 0
+31
+!s108 1725727103.000000
+!s107 C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B.sv|
+!i113 0
+Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@p@i@s@o_@r@e@g_4@b
+vPISO_REG_4B_TB
+R3
+R4
+!i10b 1
+!s100 miYDRP=l]onhez9W6OTUJ1
+I6keAE^ed]bI_XZJdNagkF1
+R5
+!s105 PISO_REG_4B_TB_sv_unit
+S1
+R6
+w1725727098
+Z9 8C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv
+Z10 FC:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv
+L0 4
+R7
+r1
+!s85 0
+31
+!s108 1725727104.000000
+!s107 C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv|
+!i113 0
+R8
+n@p@i@s@o_@r@e@g_4@b_@t@b
+XPISO_REG_4B_TB_sv_unit
+R3
+V>70RED^^VY=VP[Q@=jOFa0
+r1
+!s85 0
+31
+!i10b 1
+!s100 IR60C:3LWO>oRMk`TA=dn2
+I>70RED^^VY=VP[Q@=jOFa0
+!i103 1
+S1
+R6
+w1725130039
+R9
+R10
+L0 1
+R7
+!s108 1725130041.000000
+!s107 C:/Daniel/7mo/Verificacion/PISO_REG/PISO_REG_4B_TB.sv|
+R11
+!i113 0
+R8
+n@p@i@s@o_@r@e@g_4@b_@t@b_sv_unit

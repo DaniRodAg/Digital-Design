@@ -1,0 +1,22 @@
+C:/Daniel/7mo/Verificacion/FA_2b/FA_2b.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_2b/FA_2b.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_2b
+
+Top level modules:
+	FA_2b
+
+} {} {}} C:/Daniel/7mo/Verificacion/FA_2b/FA_2b_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_2b/FA_2b_tb.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA_2b_TB
+
+Top level modules:
+	FA_2b_TB
+
+} {} {}} C:/Daniel/7mo/Verificacion/FA_2b/FA1.sv {1 {vlog -work work -vopt -sv -stats=none C:/Daniel/7mo/Verificacion/FA_2b/FA1.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling module FA1
+
+Top level modules:
+	FA1
+
+} {} {}}

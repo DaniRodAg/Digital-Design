@@ -1,0 +1,40 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\arnol\OneDrive\Escritorio\NAND\NAND 1mA.asc
+Start Time: Sat Sep 21 07:32:32 2024
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Less than two connections to node a.  This node is used by v1.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+
+Measurement "vcrucea" FAIL'ed
+vila: v(a)=0 at 1.50413
+viha: v(a)=0 at 1.91876
+
+Measurement "nmla" FAIL'ed
+
+Measurement "nmha" FAIL'ed
+ria: viha-vila=0
+isca: MAX(id(m2))=0.000235132 FROM 0 TO 3.3
+vcruceb: v(x)=v(b) AT 1.69682
+iscb: MAX(id(m2))=0.000235132 FROM 0 TO 3.3
+vilb: v(b)=1.50413 at 1.50413
+vihb: v(b)=1.91876 at 1.91876
+
+Measurement "nmlb" FAIL'ed
+
+Measurement "nmhb" FAIL'ed
+rib: viha-vila=0
+
+Total elapsed time: 0.229 seconds.
+

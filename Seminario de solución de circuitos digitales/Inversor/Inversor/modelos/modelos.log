@@ -1,0 +1,24 @@
+T-Spice - Tanner SPICE
+Version 16.01
+Network license
+Product Release ID: T-Spice Win64 16.01.20130407.21:15:40
+Copyright © 1988-2013 Tanner EDA
+
+	Parsing "C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\Inversor\Inversor\modelos.sp"
+Warning : No simulation commands found in input file.
+
+
+Start of modelos.sp
+
+	Opening simulation database "C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\Inversor\Inversor\modelos.tsim"
+Warning : No simulation commands found in input file.
+
+Fatal Error : No devices were found in the input file
+
+Parsing                      0.01 seconds
+Setup                        0.02 seconds
+Overhead                     0.43 seconds
+-----------------------------------------
+Total                        0.46 seconds
+
+Table operation failed	with  2 Warnings  1 Fatal Error

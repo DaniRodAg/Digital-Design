@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.4e/examples
+T_opt
+!s110 1724516245
+Vf3PF;j3iO1i=RLL]YUUHf2
+Z1 04 6 4 work FA1_tb fast 0
+=1-7c8ae18cba30-66ca0792-0-2ffc
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.4e;61
+R0
+T_opt1
+!s110 1724517318
+VZ2V>M:7]fi>>zUm79HNQD2
+R1
+=1-7c8ae18cba30-66ca0bc6-189-4da0
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt1
+R2
+vFA1
+Z3 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1724517300
+!i10b 1
+!s100 E4o>Sa3kB[L3d;PC7^<Tn1
+IO6]29oBF:cDGB89l=;Ra71
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 FA1_sv_unit
+S1
+Z5 dC:/Daniel/7mo/Verificacion/FA1
+w1724514432
+8C:/Daniel/7mo/Verificacion/FA1/FA1.sv
+FC:/Daniel/7mo/Verificacion/FA1/FA1.sv
+L0 1
+Z6 OL;L;10.4e;61
+r1
+!s85 0
+31
+Z7 !s108 1724517300.000000
+!s107 C:/Daniel/7mo/Verificacion/FA1/FA1.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Daniel/7mo/Verificacion/FA1/FA1.sv|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@f@a1
+vFA1_tb
+R3
+!s110 1724517301
+!i10b 1
+!s100 NO;AXRS^1SXFacTKAIh<k2
+I7kIf[4IfZR?[Vo[h;I0J[2
+R4
+!s105 FA1_tb_sv_unit
+S1
+R5
+w1724517162
+8C:/Daniel/7mo/Verificacion/FA1/FA1_tb.sv
+FC:/Daniel/7mo/Verificacion/FA1/FA1_tb.sv
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Daniel/7mo/Verificacion/FA1/FA1_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/7mo/Verificacion/FA1/FA1_tb.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@f@a1_tb

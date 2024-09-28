@@ -1,0 +1,66 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B
+T_opt
+!s110 1726938929
+V6Mh4oZ@Ke3A;2XNFLi^R;0
+04 9 4 work MEMORY_TB fast 0
+=1-7c8ae18cba30-66eeff30-3d1-1684
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.4e;61
+vMEMORY
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z1 !s110 1726938917
+!i10b 1
+!s100 _jK_02h`]QX:HCf]aUgUA1
+IfcTComE]E7;DDZkzLYI_m2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 MEMORY_sv_unit
+S1
+Z3 dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY
+w1726938383
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY/MEMORY.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY/MEMORY.sv
+L0 1
+Z4 OL;L;10.4e;61
+r1
+!s85 0
+31
+!s108 1726938916.000000
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY/MEMORY.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY/MEMORY.sv|
+!i113 0
+Z5 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@m@e@m@o@r@y
+vMEMORY_TB
+R0
+R1
+!i10b 1
+!s100 ?D=]BWQD6CQ3a;mh2FG023
+Io6PLB5>=IXEU1K[>@eSdC2
+R2
+!s105 MEMORY_TB_sv_unit
+S1
+R3
+w1726938896
+8C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY/MEMORY_TB.sv
+FC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY/MEMORY_TB.sv
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1726938917.000000
+!s107 C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY/MEMORY_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/UDG/7mo/Verificacion de circuitos digitales/MEMORY/MEMORY_TB.sv|
+!i113 0
+R5
+n@m@e@m@o@r@y_@t@b

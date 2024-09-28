@@ -1,0 +1,504 @@
+\title{Diseño y simulación de transistores MOSFET}
+\date{2024-08-31}
+\author{Demian Alejandro Lorenzana Gómez \and Daniel Josué Rodríguez Agraz \and Tomás Venegas de la Torre}
+\documentclass[9pt,technote]{IEEEtran}
+\usepackage{filecontents,lipsum}
+\usepackage[noadjust]{cite}
+\usepackage{graphicx}
+\usepackage{footmisc}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{float}
+\usepackage{adjustbox}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue,
+	citecolor=black
+}
+%\usepackage[a4paper, total={6in, 10in}]{geometry}
+
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Objetivos}
+	El alumno se familiarizará con el procedimiento para realizar el barrido de curvas de operación del transistor MOSFET en el software de simulación SPICE, además se le presentará la forma de realizar mediciones básicas sobre curvas de respuesta usando los comandos especializados del simulador.
+
+
+	\section*{Introducción}
+	Se realizará las simulaciones en LTspice del comportamiento de transistores MOSFET ante variaciones en el voltaje de la compuerta y en el voltaje de drain. Se obtendrán sus curvas de corrientes correspondientes y se realizarán cálculos de resistencia para distintos puntos.
+	
+	\section*{Desarrollo}
+	Primero se definieron los parámetros del circuito del transistor $N$-MOS, y las características de construcción de este, como se muestra en la figura \ref{fig:simulaciones_transistores}.
+	
+	\begin{figure}[H]
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\begin{tabular}{|c|c|}
+				\hline
+				$V_{GS}$ & $1V$ \\ 
+				$V_{Sat}$ & $0.7V$ \\ 
+				$l$ & $0.6\mu m$ \\ 
+				$W$ & $6\mu m$ \\
+				\hline
+			\end{tabular}
+			\caption{Parámetros para la simulación del transistor $N-MOS$ para $V_{GS}=1V$.}
+			\label{Tabla:VG1_nmos:1}
+		\end{subfigure}%
+		~
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\begin{tabular}{|c|c|} 
+				\hline
+				$V_{GS}$ & $1.5V$ \\ 
+				$V_{Sat}$ & $0.7V$ \\ 
+				$l$ & $0.6\mu m$ \\ 
+				$W$ & $6\mu m$ \\
+				\hline 
+			\end{tabular}
+			\caption{Parámetros para la simulación del transistor $N-MOS$ para $V_{GS}=1.5V$.}
+			\label{Tabla:VG1.5_nmos:1}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\begin{tabular}{|c|c|} 
+				\hline
+				$V_{GS}$ & $-1V$ \\ 
+				$V_{Sat}$ & $0.9V$ \\ 
+				$l$ & $0.6\mu m$ \\ 
+				$W$ & $6\mu m$ \\
+				\hline
+			\end{tabular}
+			\caption{Parámetros para la simulación del transistor $P-MOS$ para $V_{GS}=1V$.}
+			\label{Tabla:VG1_pmos:1}
+		\end{subfigure}%
+		~
+		\hfill
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\begin{tabular}{|c|c|}
+				\hline
+				$V_{GS}$ & $-1.5V$ \\ 
+				$V_{Sat}$ & $0.9V$ \\ 
+				$l$ & $0.6\mu m$ \\ 
+				$W$ & $6\mu m$ \\
+				\hline
+			\end{tabular}
+			\caption{Parámetros para la simulación del transistor $P-MOS$ para $V_{GS}=1.5V$.}
+			\label{Tabla:VG1.5_pmos:1}
+		\end{subfigure}%
+		\caption{Características de los circuitos simulados del transistor MOSFET}
+		\label{fig:simulaciones_transistores}
+	\end{figure}
+	
+	Después se realizaron 2 simulaciones para cada tipo de transistor con voltajes en compuerta de 1V y 1.5V, con los parámetros que se muestran en las Tablas \ref{Tabla:VG1_nmos:1} y \ref{Tabla:VG1.5_nmos:1} para los transistores $N$-MOS, y en las Tablas \ref{Tabla:VG1_pmos:1} y \ref{Tabla:VG1.5_pmos:1} para los transistores $P$-MOS, respectivamente.
+	
+	La Figura \ref{fig:layout_transistores CMOS} muestra los diseños de los circuitos que permiten el funcionamiento de los transistores CMOS.
+	
+	
+	\begin{figure}[H]
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\includegraphics[width=\columnwidth]{"A1 sim MOSFET/nmos vg1"}
+			
+			\caption{}
+			\label{fig:nmos-vg1}
+		\end{subfigure}
+		~
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\includegraphics[width=\columnwidth]{"A1 sim MOSFET/nmos vg1_5"}
+			\caption{}
+			\label{fig:nmos-vg15}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\includegraphics[width=\columnwidth]{"A1 sim MOSFET/pmos vg1"}
+			\caption{}
+			\label{fig:pmos-vg1}
+		\end{subfigure}
+		~
+		\hfill
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\includegraphics[width=\columnwidth]{"A1 sim MOSFET/pmos vg1_5"}
+			\caption{}
+			\label{fig:pmos-vg15}
+		\end{subfigure}
+		\caption{Layout de transistores CMOS}
+		\label{fig:layout_transistores CMOS}
+	\end{figure}
+
+	Después se realizaron mediciones de corriente ante voltajes drain de 0.5V, 1V, 2V y 3V, y se calcularon las resistencias correspondientes para cada punto con ayuda de los comandos de spice, como se muestra en la figura \ref{fig:layout_transistores CMOS}.
+	
+	Finalmente utilizando las reglas de diseño que se muestran en la Tabla. Se utilizan los valores de ancho y largo que se definieron anteriormente en la Figura \ref{fig:simulaciones_transistores} realizan los planos de fabricación para los transistores MOSFET tipo P y tipo N, como se muestra en la Figura \ref{fig:layout_transistores CMOS_Si}.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\centering
+			\begin{tabular}{|c|c|}
+				\hline
+				WIdth & $1.5V$ \\ 
+				Height & $0.7V$ \\ 
+				\hline
+			\end{tabular}
+			\caption{Parámetros para la simulación del transistor $N-MOS$ para $V_{GS}=1V$.}
+			\label{Tabla:poly_param:1}
+		\end{subfigure}
+		\vfill
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\centering
+			\begin{tabular}{|c|c|} 
+				\hline
+				WIdth & $1.5V$ \\ 
+				Height & $0.7V$ \\ 
+				\hline 
+			\end{tabular}
+			\caption{Parámetros para la simulación del transistor $N-MOS$ para $V_{GS}=1.5V$.}
+			\label{Tabla:active_param:1}
+		\end{subfigure}
+		\vfill
+		\begin{subfigure}[b]{0.45\columnwidth}
+			\centering
+			\begin{tabular}{|c|c|} 
+				\hline
+				WIdth & $1.5V$ \\ 
+				Height & $0.7V$ \\ 
+				\hline
+			\end{tabular}
+			\caption{Parámetros para la simulación del transistor $P-MOS$ para $V_{GS}=1V$.}
+			\label{Tabla:select_param:1}
+		\end{subfigure}%
+		\caption{Características de los circuitos simulados del transistor MOSFET}
+		\label{fig:sim_param}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos layout"}
+			\caption{Layout del transistor $P$-MOS.}
+			\label{fig:nmos-layout:1}
+		\end{subfigure}
+		~
+		\hfill
+		\begin{subfigure}[t]{0.45\columnwidth}
+			\centering
+			\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos layout1"}
+			\caption{Layout del transistor $N$-MOS.}
+			\label{fig:pmos-layout1:2}
+		\end{subfigure}
+		\caption{Layout de la representación en silicio de transistores CMOS}
+		\label{fig:layout_transistores CMOS_Si}
+	\end{figure}
+
+
+	
+	
+	
+	
+	\section*{Resultados}
+	
+	\subsection*{Resultados $N$-MOS para $V_{GS}=1V$}
+	En la Figura \ref{fig:nmos-vg1-out} se muestran los resultados de la simulación del circuito para un transistor $N$-MOS con un voltaje de compuerta de $1V$, donde se pueden apreciar los valores de corriente correspondientes para distintos voltajes de $V_{DD}$, así como los valores de resistencia $R_{DS}$ del transistor.
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1 out"}
+    	\caption{}
+    	\label{fig:nmos-vg1-out}
+    \end{figure}
+    
+    Los resultados de la simulación y los distintos valores de resistencias para un transistor MOSFET tipo n con voltaje de compuerta de $1V$ se resumen en la Tabla \ref{Tabla:res_VG1_nmos:1}. 
+    
+    \begin{table}[H]
+    	\centering
+    	\begin{tabular}{|c|c|c|}
+    		\hline
+    		$V_{DD}$ & $I_{D}$ & $R$\\
+    		\hline
+    		$0.5V$ & $96.79 \mu A$ & $5.16 k\Omega$\\ 
+    		$1V$ & $107.28 \mu A$ &  $9.32 k\Omega$\\ 
+    		$2V$ & $115.73 \mu A$ &  $17.28 k\Omega$\\
+    		$3V$ & $121.58 \mu A$ &  $24.67 k\Omega$\\
+    		\hline
+    	\end{tabular}
+    	\caption{Parámetros para la simulación del transistor $N$-MOS para $V_{GS}=1V$.}
+    	\label{Tabla:res_VG1_nmos:1}
+    \end{table}
+    
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_nocursor"}
+		\caption{Gráfico de simulación de la curva de corriente del transistor MOSFET tipo $n$ ante un voltaje en la compuerta de $1V$.}
+		\label{fig:nmos-vg1nocursor}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_cursor0_5v"}
+		\caption{}
+		\label{fig:nmos-vg1cursor05v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_cursor1v"}
+		\caption{}
+		\label{fig:nmos-vg1cursor1v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_cursor2v"}
+		\caption{}
+		\label{fig:nmos-vg1cursor2v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_cursor3v"}
+		\caption{}
+		\label{fig:nmos-vg1cursor3v}
+	\end{figure}
+	
+	\pagebreak
+	
+	\subsection*{Resultados $N$-MOS para $V_{GS}=1.5V$}
+	
+	En la Figura \ref{fig:nmos-vg15-out} se muestran los resultados de la simulación del circuito para un transistor $N$-MOS con un voltaje de compuerta de $1.5V$, donde se pueden apreciar los valores de corriente correspondientes para distintos voltajes de $V_{DD}$, así como los valores de resistencia $R_{DS}$ del transistor.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_5 out"}
+		\caption{}
+		\label{fig:nmos-vg15-out}
+	\end{figure}
+    
+    Los resultados de la simulación y los distintos valores de resistencias para un transistor MOSFET tipo n con voltaje de compuerta de $1.5V$ se resumen en la Tabla \ref{Tabla:res_VG1_nmos:1}.
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			$V_{DD}$ & $I_{D}$ & $R$\\
+			\hline
+			$0.5V$ & $316.66 \mu A$ & $1.57 k\Omega$\\ 
+			$1V$ & $376.67 \mu A$ &  $2.65 k\Omega$\\ 
+			$2V$ & $402.34 \mu A$ &  $4.97 k\Omega$\\
+			$3V$ & $413.81 \mu A$ &  $7.25 k\Omega$\\
+			\hline
+		\end{tabular}
+		\caption{Parámetros para la simulación del transistor $N$-MOS para $V_{GS}=1V$.}
+		\label{Tabla:res_VG15_nmos:1}
+	\end{table}
+
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_5_nocursor"}
+    	\caption{}
+    	\label{fig:nmos-vg15nocursor}
+    \end{figure}
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_5_cursor0_5v"}
+    	\caption{}
+    	\label{fig:nmos-vg15cursor05v}
+    \end{figure}
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_5_cursor1v1"}
+    	\caption{}
+    	\label{fig:nmos-vg15cursor1v1}
+    \end{figure}
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_5_cursor2v"}
+    	\caption{}
+    	\label{fig:nmos-vg15cursor2v}
+    \end{figure}
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/nmos vg1_5_cursor3v"}
+    	\caption{}
+    	\label{fig:nmos-vg15cursor3v}
+    \end{figure}
+    
+	\subsection*{Resultados $P$-MOS para $V_{GS}=1V$}
+
+	En la Figura \ref{fig:pmos-vg1-out} se muestran los resultados de la simulación del circuito para un transistor $N$-MOS con un voltaje de compuerta de $1V$, donde se pueden apreciar los valores de corriente correspondientes para distintos voltajes de $V_{DD}$, así como los valores de resistencia $R_{DS}$ del transistor.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1 out"}
+		\caption{}
+		\label{fig:pmos-vg1-out}
+	\end{figure}
+	
+    Los resultados de la simulación y los distintos valores de resistencias para un transistor MOSFET tipo p con voltaje de compuerta de $1V$ se resumen en la Tabla \ref{Tabla:res_VG1_pmos:1}.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			$V_{DD}$ & $I_{D}$ & $R$\\
+			\hline
+			$0.5V$ & $1.679 \mu A$ & $297.73 k\Omega$\\ 
+			$1V$ & $1.980 \mu A$ &  $504.86 k\Omega$\\ 
+			$2V$ & $2.538 \mu A$ &  $787.88 k\Omega$\\
+			$3V$ & $3.086 \mu A$ &  $971.97 k\Omega$\\
+			\hline
+		\end{tabular}
+		\caption{Parámetros para la simulación del transistor $N-MOS$ para $V_{GS}=1V$.}
+		\label{Tabla:res_VG1_pmos:1}
+	\end{table}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_nocursor"}
+		\caption{}
+		\label{fig:pmos-vg1nocursor}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_cursor3v"}
+		\caption{}
+		\label{fig:pmos-vg1cursor3v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_cursor2v"}
+		\caption{}
+		\label{fig:pmos-vg1cursor2v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_cursor1v"}
+		\caption{}
+		\label{fig:pmos-vg1cursor1v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_cursor0_5v"}
+		\caption{}
+		\label{fig:pmos-vg1cursor05v}
+	\end{figure}
+	
+	\subsection*{Resultados $P$-MOS para $V_{GS}=1.5V$}
+
+	En la Figura \ref{fig:pmos-vg15-out} se muestran los resultados de la simulación del circuito para un transistor $N$-MOS con un voltaje de compuerta de $1V$, donde se pueden apreciar los valores de corriente correspondientes para distintos voltajes de $V_{DD}$, así como los valores de resistencia $R_{DS}$ del transistor.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_5 out"}
+		\caption{}
+		\label{fig:pmos-vg15-out}
+	\end{figure}
+
+    Los resultados de la simulación y los distintos valores de resistencias para un transistor MOSFET tipo p con voltaje de compuerta de $1.5V$ se resumen en la Tabla \ref{Tabla:res_VG15_pmos:1}.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			$V_{DD}$ & $I_{D}$ & $R$\\
+			\hline
+			$0.5V$ & $66.18 \mu A$ & $7.55 k\Omega$\\ 
+			$1V$ & $78.27 \mu A$ &  $12.77 k\Omega$\\ 
+			$2V$ & $90.92 \mu A$ &  $21.99 k\Omega$\\
+			$3V$ & $100.18 \mu A$ & $29.94 k\Omega$\\
+			\hline
+		\end{tabular}
+		\caption{Parámetros para la simulación del transistor $P$-MOS para $V_{GS}=1.5V$.}
+		\label{Tabla:res_VG15_pmos:1}
+	\end{table}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_5_nocursor"}
+		\caption{}
+		\label{fig:pmos-vg15nocursor}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_5_cursor0_5v"}
+		\caption{}
+		\label{fig:pmos-vg15cursor05v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_5_cursor1v"}
+		\caption{}
+		\label{fig:pmos-vg15cursor1v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_5_cursor2v"}
+		\caption{}
+		\label{fig:pmos-vg15cursor2v}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\columnwidth]{"A1 sim MOSFET/pmos vg1_5_cursor3v"}
+		\caption{}
+		\label{fig:pmos-vg15cursor3v}
+	\end{figure}
+		
+	
+	\subsection{Tabla comparativa de resistencias}
+	En la Tabla \ref{Tabla:tabla de resistencias} se hace una comparación de las resistencias de los transistores MOSFET al cambiar el voltaje en la compuerta y para transistores tipo N y tipo P.
+	\begin{table}[H]
+			\centering
+			\begin{tabular}{|p{.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+				\hline
+				\vfill
+				$V_{DD}$ &$N$-MOS R($k\Omega$) a $1V_{GS}$&$N$-MOS R($k\Omega$) a $1.5V_{GS}$&$P$-MOS R($k\Omega$) a $1V_{GS}$&$P$-MOS R($k\Omega$) a $1.5V_{GS}$ \\
+				\hline
+				\vfill $.5V$ & \vfill$5.16 k\Omega$ & \vfill$1.57 k\Omega$ & \vfill$297.73 k\Omega$ & \vfill$7.55 k\Omega$ \\
+				\vfill $1V$ & \vfill$9.32 k\Omega$ & \vfill$2.65 k\Omega$ & \vfill$504.86 k\Omega$ & \vfill$12.77 k\Omega$ \\
+				\vfill $2V$ & \vfill$17.28 k\Omega$ & \vfill$4.97 k\Omega$ & \vfill$787.88 k\Omega$ & \vfill$21.99 k\Omega$ \\
+				\vfill $3V$ & \vfill$24.67 k\Omega$ & \vfill$7.25 k\Omega$ & \vfill$971.97 k\Omega$ & \vfill$29.94 k\Omega$ \\
+				\hline
+
+			\end{tabular}
+			\caption{Tabla comparativa de resistencias}
+			\label{Tabla:tabla de resistencias}
+		\end{table}
+	
+	\section*{Conclusiones}
+	
+	El transistor MOSFET es la base de la electrónica digital y la microelectrónica. El correcto modelado nos permite hacer calculos de consumo y de capacidad de cargas, que soporta a la salida, además de que para el control de periféricos es necesario conocer la resistencia del puerto; nos ayuda para hacer calculos para protocolos de comunicaciones y maximizar la potencia que llega al receptor. Las herramientas como spice son excelentes para el diseño y simulación de circuitos. Se consiguió con éxito la simulación de transistores con distintos voltajes de compuerta y el calculo de la resistencia en distintos puntos de la gráfica de corriente.
+	
+
+	
+	
+	\bibliographystyle{IEEEtran}
+	%\bibliography{References}
+	
+
+
+
+
+
+\end{document}

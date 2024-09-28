@@ -1,0 +1,7 @@
+* C:\Users\arnol\OneDrive\Escritorio\Inversor\Inversor.asc
+M1 x A 0 0 CMOSN l=0.6u w=7.5u
+M2 VDD A x VDD CMOSP l=.6u w=26.7u
+*C1 x 0 10p
+.model NMOS NMOS
+.model PMOS PMOS
+.end

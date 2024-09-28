@@ -1,0 +1,93 @@
+\title{ 8-bit Parallel-In/Serial-Out shift register}
+\date{2024-08-31}
+\author{
+	\IEEEauthorblockN{Daniel Josué Rodríguez Agraz}
+	\IEEEauthorblockA{
+		\textit{Ingeniería en Electrónica y Comunicaciones, Unniversidad de Guadalajara}
+	}
+}
+
+\documentclass[9pt,technote]{IEEEtran}
+\usepackage[noadjust]{cite}
+\usepackage{graphicx}
+\usepackage{footmisc}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{float}
+
+
+
+\begin{document}
+	
+	\maketitle
+	\section{Objectives}
+	\begin{itemize}
+		\item Use Verilog to design and simulate an 8-bit Parallel-In/Serial-Out shift register using the IC 74HC165 specifications.
+		\item Design a test bench for the circuit verification.
+	\end{itemize}
+	
+	\section{Introduction}
+	
+		
+	\section{Methodology}
+	The 8-bit Parallel-In/Serial-Out shift register has been developed in two stages. In the first step the register has been designed based on the IC 74HC165 specifications available in the literature \cite{floyd_fundamentos_nodate}. Using the truth table and the sequence diagram provided by the.
+	
+	\begin{lstlisting}[language=Verilog, caption={Codigo MATLAB para correlacionar señales de audio.}, label={code:audio_correlation}]
+module PISO_REG_4B(
+  input reg[7:0] D_in,
+  input reg LOAD, SER,
+  input reg clk, clken,
+  output reg Q, QNEG
+);
+
+reg [7:0] D;
+
+assign QNEG = ~Q;
+assign Q = D[7];
+
+always@(posedge clk or posedge clken)
+begin
+  if (~LOAD)
+  begin
+    D <= D_in;
+  end 
+  else if (~clk | ~clken)
+  begin
+    D <= D << 1;
+    D[0]<=SER;
+  end
+
+end
+
+endmodule
+	\end{lstlisting}
+	
+	
+	\section{Conclusiones}
+	In this document, an 8-bit Parallel-In/Serial-Out shift register was designed and tested. The register, based on the IC 74HC165 specifications, produced the same results under identical inputs during the test bench evaluation. The test bench results indicate, that the designed register can be used as a commercial Parallel-In/Serial-Out shift register. 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\bibliographystyle{IEEEtran}
+	%\bibliography{References}
+	[1] Texas Instruments, "SNx4HC165 8-Bit Parallel-Load Shift Registers". SN74HC165 datasheet, Dec. 1982[Revised Dec. 2015]
+	
+	
+	
+	
+	
+	
+	
+\end{document}

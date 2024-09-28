@@ -1,0 +1,36 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NOR\NOR2mA.asc
+Start Time: Thu Sep 19 15:54:10 2024
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Less than two connections to node b.  This node is used by v3.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+
+vcrucea: v(x)=v(a) AT 1.60246
+vila: v(a)=1.26186 at 1.26186
+viha: v(a)=1.78253 at 1.78253
+nmla: v(a)=1.61471 at 1.61471
+nmha: v(a)=1.60558 at 1.60558
+ria: viha-vila=0.520669
+isca: MAX(id(m2))=0.000588183 FROM 0 TO 3.3
+
+Measurement "vcruceb" FAIL'ed
+iscb: MAX(id(m2))=0.000588183 FROM 0 TO 3.3
+vilb: v(b)=0 at 1.26186
+vihb: v(b)=0 at 1.78253
+nmlb: v(b)=0 at 1.61471
+nmhb: v(b)=0 at 1.60558
+rib: viha-vila=0.520669
+
+Total elapsed time: 0.062 seconds.
+

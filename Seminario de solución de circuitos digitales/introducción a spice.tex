@@ -1,0 +1,49 @@
+\title{Introducción a SPICE}
+\date{}
+\author{Tomás Venegas de la Torre \and Daniel Josué Rodríguez Agraz\and Demian Alejandro Lorenzana Gómezd}
+
+%\usepackage[spanish]{babel}
+%\usepackage[latin1]{inputenc}
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue,
+	citecolor=black
+}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\usepackage{footmisc}
+\begin{document}
+	\maketitle
+	
+	SPICE es un programa de simulación con un énfasis en circuitos integrados. Todos los motores de SPICE utilizan un archivo de texto o lista de redes como entrada para las simulaciones.\footnote{Este documento es un resumen basado en el libro \textit{CMOS Circuit Design, Layout, and Simulation} de R. Jacob Baker, 3rd ed., Hoboken, NJ, USA: Wiley-IEEE Press, 2010.}
+	
+	\subsection*{¿Cómo generar una lista de redes?}
+	Una lista de redes se puede generar utilizando programas como Notepad o WordPad. Lo importante es la extensión del archivo (*.cir, *.sp o *.spi), ya que es lo que SPICE reconoce para realizar la simulación.
+	
+	\subsection*{Punto de operación}
+	El primer análisis de simulación en SPICE es el punto de operación, conocido como .op. La salida de este tipo de simulación no es gráfica, sino que consiste en una lista de parámetros en los nodos y componentes, como voltajes y corrientes.
+	
+	SPICE ignora la primera línea del archivo, ya que esta es una línea de título. Un comentario comienza con *, mientras que los comandos empiezan con *\#.
+	
+	Los comandos más comunes son:
+	\begin{itemize}
+		\item *\#destroy all: Limpia la información de simulaciones anteriores.
+		\item *\#run: Ejecuta la simulación.
+		\item *\#print all: Muestra los resultados de la simulación.
+	\end{itemize}
+	
+	Es importante destacar que se pueden asignar nombres a los nodos, lo cual facilita el análisis de circuitos más complejos.
+	
+	\subsection*{Análisis de la función de transferencia}
+	El análisis de la función de transferencia se utiliza para encontrar las características transitorias de los elementos de un circuito. En este caso, la lista de redes utilizará el comando .TF en lugar de .op.
+	
+	\subsection*{Análisis en DC}
+	Los dos análisis anteriores tienen la característica de que su entrada es constante. En un análisis en DC, la entrada se varía y los voltajes y corrientes se simulan. En lugar de imprimir los resultados, se pueden graficar utilizando el siguiente comando:
+	\begin{itemize}
+		\item *\#plot Vin Vout
+	\end{itemize}
+\end{document}

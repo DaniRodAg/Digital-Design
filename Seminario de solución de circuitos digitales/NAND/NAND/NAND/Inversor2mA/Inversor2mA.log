@@ -1,0 +1,47 @@
+T-Spice - Tanner SPICE
+Version 16.01
+Network license
+Product Release ID: T-Spice Win64 16.01.20130407.21:15:40
+Copyright © 1988-2013 Tanner EDA
+
+	Parsing "C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\Inversor\Inversor\Inversor2mA.spc"
+	Including "C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\Inversor\Inversor\modelos.sp"
+Warning : No simulation commands found in input file.
+
+
+Start of Inversor2mA.spc
+Loaded BSIM3v31 model library, Berkeley BSIM3 VERSION 3.1 with extensions
+
+	Opening simulation database "C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\Inversor\Inversor\Inversor2mA.tsim"
+Warning : No simulation commands found in input file.
+
+Warning : "Inversor2mA.spc" line 18 Device XU328.M1 - Source perimeter (PS) is zero
+Warning : "Inversor2mA.spc" line 18 Device XU328.M1 - Drain perimeter (PD) is zero
+Warning : "Inversor2mA.spc" line 19 Device XU328.M2 - Source perimeter (PS) is zero
+Warning : "Inversor2mA.spc" line 19 Device XU328.M2 - Drain perimeter (PD) is zero
+Warning : Node XU328.2 is only attached to FET gate terminals; voltage is undefined
+Warning : Node GND is not attached to anything: voltage is arbitrary
+        : Attaching node GND to node XU328.1 to eliminate floating node
+
+General options:
+        threads = 1
+
+ Device and node counts:
+              MOSFETs -       2
+    MOSFET geometries -       2
+          Subcircuits -       1
+    Model Definitions -       2
+      Computed Models -       2
+    Independent nodes -       3
+       Boundary nodes -       2
+          Total nodes -       5
+*** 8 WARNING MESSAGES GENERATED DURING SETUP
+
+
+Parsing                      0.01 seconds
+Setup                        0.03 seconds
+Overhead                     0.34 seconds
+-----------------------------------------
+Total                        0.38 seconds
+
+Simulation completed	with  8 Warnings

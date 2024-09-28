@@ -1,0 +1,47 @@
+`timescale 1ns/1ps
+
+
+module FA_4B
+(
+	input wire [3:0]A, B,
+	output wire [3:0]S,
+	output wire Cout, Cin
+);
+
+wire carry;
+
+FA_2b LSB
+(
+	.A0(A[0]),
+	.A1(A[1]),
+	
+	.B0(B[0]),
+	.B1(B[1]),
+
+	.Cin(Cin),
+
+	.S0(S[0]),
+	.S1(S[1]),
+	.Cout1(carry)
+);
+
+FA_2b MSB
+(
+	.A0(A[2]),
+	.A1(A[3]),
+	
+	.B0(B[2]),
+	.B1(B[3]),
+
+	.Cin(carry),
+
+	.S0(S[2]),
+	.S1(S[3]),
+	.Cout1(Cout)
+);
+
+
+
+
+
+endmodule

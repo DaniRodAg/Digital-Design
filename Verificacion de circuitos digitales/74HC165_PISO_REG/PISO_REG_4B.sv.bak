@@ -1,0 +1,28 @@
+module PISO_REG_4B(
+  input reg[0:7] D_in,
+  input reg LOAD, SER,
+  input reg clk, clken,
+  output reg Q, QNEG
+);
+
+reg [0:3] D;
+
+assign QNEG = ~Q;
+
+assign Q = D[3];
+
+always@(posedge clk or posedge clken)
+begin
+  if (~LOAD)
+  begin
+    D <= D_in;
+  end 
+  else if (~clk | ~clken)
+  begin
+    D <= D >> 1;
+    D[0]<=SER;
+  end
+
+end
+
+endmodule
