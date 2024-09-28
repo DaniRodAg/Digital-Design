@@ -1,18 +1,18 @@
 module ADQ_SYS(
   input wire clk, rst, eoc, init, fac,
-  output reg [5:0] present_state
+  output reg [6:0] present_state
 );
 
-reg [5:0] next_state;
+reg [6:0] next_state;
 
 // Definir estados con localparam
-localparam [5:0]  s0 = 6'h00,
-                  s1 = 6'h09,
-                  s2 = 6'h0C,
-                  s3 = 6'h08,
-                  s4 = 6'h18,
-                  s5 = 6'h0e,
-                  s6 = 6'h20;
+localparam [6:0]  s0 = 6'h00,
+                  s1 = 6'h02,
+                  s2 = 6'h08,
+                  s3 = 6'h01,
+                  s4 = 6'h30,
+                  s5 = 6'h04,
+                  s6 = 6'h40;
 
 always @(posedge clk or posedge rst or posedge init) 
 begin
@@ -36,7 +36,7 @@ begin
     s0:  next_state <= s1;
     s1:  next_state <= s2;
     s2:  next_state <= s3;
-    s3:  if(eoc==1'b1) 
+    s3:  if(eoc==1'b1)
            next_state <= s4;
          else 
            next_state <= s3;

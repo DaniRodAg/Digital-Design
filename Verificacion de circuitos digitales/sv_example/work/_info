@@ -1,0 +1,42 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/sv_example
+T_opt
+!s110 1727538360
+VHSfnBFo97:GU][MoElG9z1
+04 10 4 work HelloWorld fast 0
+=1-7c8ae18cba30-66f824b8-25d-3470
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4e;61
+vHelloWorld
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1727538357
+!i10b 1
+!s100 0PI@4XbITP[aPACYRQ@8^3
+I6OAG5Ki6lgXE8NKg6zA<d3
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 sv_example_sv_unit
+S1
+R0
+w1727538353
+8sv_example.sv
+Fsv_example.sv
+L0 3
+OL;L;10.4e;61
+r1
+!s85 0
+31
+!s108 1727538357.000000
+!s107 sv_example.sv|
+!s90 sv_example.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@hello@world
