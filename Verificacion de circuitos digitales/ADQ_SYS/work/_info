@@ -7,4 +7,181 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B
+//dC:/Daniel/UDG/7mo/Verificacion de circuitos digitales/Counter_4B
+dC:\Daniel\Digital-Design\Verificacion de circuitos digitales\ADQ_SYS
+T_opt
+!s110 1727503631
+V?]nke2KB1^]ZeXQ[4]nE10
+04 10 4 work ADQ_SYS_TB fast 0
+=14-58112219c1c6-66f79d0f-253-6344
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.4e;61
+vADQ_SYS
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z1 !s110 1727503626
+!i10b 1
+!s100 A_VDLD5;cS@]m7Idi@@3Z0
+IQRmo>;_GiMAd:LYoi6VNU1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ADQ_SYS_sv_unit
+S1
+Z3 dC:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS
+w1727496992
+8C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS.sv
+FC:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS.sv
+L0 1
+Z4 OL;L;10.4e;61
+r1
+!s85 0
+31
+Z5 !s108 1727503626.000000
+!s107 C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS.sv|
+!i113 0
+Z6 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a@d@q_@s@y@s
+vADQ_SYS_TB
+R0
+R1
+!i10b 1
+!s100 WKj3@O`?nW<b8QDX<HRRF0
+I`bi[=:bIY]aa7P0W]n4N31
+R2
+!s105 ADQ_SYS_TB_sv_unit
+S1
+R3
+w1727502666
+8C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS_TB.sv
+FC:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS_TB.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS_TB.sv|
+!i113 0
+R6
+n@a@d@q_@s@y@s_@t@b
+vCounter_4B
+R0
+!s110 1727498148
+!i10b 1
+!s100 ][5QfUE1A?Q7f8Jknz_[i3
+I;0>4gPUD`M@V4I<4@:JX_2
+R2
+Z7 !s105 Counter_4B_sv_unit
+S1
+R3
+w1727498146
+Z8 8C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/Counter_4B.sv
+Z9 FC:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/Counter_4B.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1727498148.000000
+Z10 !s107 C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/Counter_4B.sv|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/Counter_4B.sv|
+!i113 0
+R6
+n@counter_4@b
+vCounter_7B
+R0
+!s110 1727498212
+!i10b 1
+!s100 ?VH;Vl>`RV2NV<Mkef=R12
+IF@jcF5=c9R0Cmok3JiCJz2
+R2
+R7
+S1
+R3
+w1727498209
+R8
+R9
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1727498212.000000
+R10
+R11
+!i113 0
+R6
+n@counter_7@b
+vCounter_8B
+R0
+R1
+!i10b 1
+!s100 n_2S8Vkk@a>Rz?`PV`ZAc0
+IeTAdPSFQAkNjX`?HCjfJ:3
+R2
+R7
+S1
+R3
+w1727501329
+R8
+R9
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R10
+R11
+!i113 0
+R6
+n@counter_8@b
+vMEMORY
+R0
+R1
+!i10b 1
+!s100 T[TEe`;=gh0_>inbBlAeR1
+IS7<>VAG1;<inFbE=LQ^e53
+R2
+!s105 MEMORY_sv_unit
+S1
+R3
+w1727503624
+8C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY.sv
+FC:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY.sv|
+!i113 0
+R6
+n@m@e@m@o@r@y
+vMEMORY_TB
+R0
+!s110 1727494997
+!i10b 1
+!s100 ?D=]BWQD6CQ3a;mh2FG023
+I^YKh<5mj_iOJO5<iRVSUl3
+R2
+!s105 MEMORY_TB_sv_unit
+S1
+R3
+w1727485850
+8C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY_TB.sv
+FC:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY_TB.sv
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1727494997.000000
+!s107 C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY_TB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY_TB.sv|
+!i113 0
+R6
+n@m@e@m@o@r@y_@t@b
