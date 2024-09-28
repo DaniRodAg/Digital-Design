@@ -1,9 +1,9 @@
-{C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY.sv}
+{C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/Counter_4B.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/Counter_4B.sv}
 QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
--- Compiling module MEMORY
+-- Compiling module Counter_8B
 
 Top level modules:
-	MEMORY
+	Counter_8B
 
 } {} {}} {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS_TB.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS_TB.sv}
 QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
@@ -12,12 +12,12 @@ QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
 Top level modules:
 	ADQ_SYS_TB
 
-} {} {}} {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/Counter_4B.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/Counter_4B.sv}
+} {} {}} {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/MEMORY.sv}
 QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
--- Compiling module Counter_8B
+-- Compiling module MEMORY
 
 Top level modules:
-	Counter_8B
+	MEMORY
 
 } {} {}} {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Daniel/Digital-Design/Verificacion de circuitos digitales/ADQ_SYS/ADQ_SYS.sv}
 QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
