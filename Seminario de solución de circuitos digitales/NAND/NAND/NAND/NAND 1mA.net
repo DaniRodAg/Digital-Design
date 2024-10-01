@@ -1,0 +1,8 @@
+* C:\Users\arnol\OneDrive\Documents\GitHub\Digital-Design\Seminario de solución de circuitos digitales\NAND\NAND\NAND\NAND 1mA.asc
+M1 N001 A 0 0 CMOSN l=0.6u w=4.2u
+M2 VDD B x VDD CMOSP l=.6u w=11.7u
+M3 x B N001 0 CMOSN l=0.6u w=4.2u
+M4 VDD A x VDD CMOSP l=.6u w=11.7u
+.model NMOS NMOS
+.model PMOS PMOS
+.end

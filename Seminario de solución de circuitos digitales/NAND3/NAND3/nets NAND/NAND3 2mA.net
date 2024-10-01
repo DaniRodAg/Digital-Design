@@ -1,0 +1,10 @@
+* C:\Users\arnol\OneDrive\Documents\GitHub\Digital-Design\Seminario de solución de circuitos digitales\NAND3\NAND3\NAND3 2mA.asc
+M1 N001 A N002 0 CMOSN l=0.6u w=7.5u
+M2 VDD B x VDD CMOSP l=.6u w=18.3u
+M3 x B N001 0 CMOSN l=0.6u w=7.5u
+M4 VDD A x VDD CMOSP l=.6u w=18.3u
+M5 VDD C x VDD CMOSP l=.6u w=18.3u
+M6 N002 C 0 0 CMOSN l=0.6u w=7.5u
+.model NMOS NMOS
+.model PMOS PMOS
+.end
