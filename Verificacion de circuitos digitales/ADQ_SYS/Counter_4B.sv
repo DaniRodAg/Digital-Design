@@ -15,7 +15,7 @@ begin
   begin
     if(COUNT=='hFF) 
     begin
-      COUNT = 'h00;
+      COUNT <= 'h0;
       fac = 'b1;
     end
     else COUNT = COUNT+1;

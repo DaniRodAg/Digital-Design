@@ -6,13 +6,13 @@ module ADQ_SYS(
 reg [6:0] next_state;
 
 // Definir estados con localparam
-localparam [6:0]  s0 = 6'h00,
-                  s1 = 6'h02,
-                  s2 = 6'h08,
-                  s3 = 6'h01,
-                  s4 = 6'h30,
-                  s5 = 6'h04,
-                  s6 = 6'h40;
+localparam [6:0]  s0 = 7'h00,
+                  s1 = 7'h02,
+                  s2 = 7'h08,
+                  s3 = 7'h01,
+                  s4 = 7'h30,
+                  s5 = 7'h04,
+                  s6 = 7'h40;
 
 always @(posedge clk or posedge rst or posedge init) 
 begin
@@ -41,7 +41,8 @@ begin
          else 
            next_state <= s3;
     s4:  next_state <= s5;
-    s5:  if(fac==1'b1) next_state <= s6;
+    s5:  if(fac==1'b1) 
+            next_state <= s6;
          else next_state <= s2;
     s6:  next_state <= s6;
     default: next_state <= s0; // Default state

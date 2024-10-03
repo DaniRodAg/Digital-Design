@@ -39,6 +39,7 @@ MEMORY mem
   .add(count),
   .wr(W),
   .rst(rst),
+  .en(CS),
   .clk(clk_tb),
   .data_out(data_out)
 );

@@ -1,6 +1,6 @@
 module Counter_8B(
   input wire clk, rst,
-  output reg [8:0] COUNT,
+  output reg [7:0] COUNT,
   output reg fac
 );
 
@@ -15,7 +15,6 @@ begin
   begin
     if(COUNT=='hFF) 
     begin
-      COUNT = 'h00;
       fac = 'b1;
     end
     else COUNT = COUNT+1;
