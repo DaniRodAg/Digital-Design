@@ -63,7 +63,7 @@ begin
     eoc = 1;
     @(posedge clk_tb);
     eoc = 0;
-    data_in = 'hFFFF - j;
+    data_in = 'hFFFFFFFF - j;
     @(posedge clk_tb);
   end  
   rst=1;

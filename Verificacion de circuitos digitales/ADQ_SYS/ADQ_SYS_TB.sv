@@ -10,12 +10,12 @@ reg [DATA_W-1:0] data_in;
 wire [DATA_W-1:0] data_out;
 /*
            STATES?
-| ACK | W|CS | SC | CC|RC |?
-| ACK | MEM  | ADC| COUNT |
+| ACK | W|CS | SC | CC|RC |WFC|
+| ACK | MEM  | ADC| COUNT |WFC|
 */
 ADQ_SYS dut
 (
-  .present_state({ACK, W, CS, SC, CC, RC}),
+  .present_state({ACK, W, CS, SC, CC, RC, WFC}),
 
   .clk(clk_tb),
   .rst(rst),
