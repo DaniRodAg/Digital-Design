@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
-Circuit: * C:\Users\arnol\OneDrive\Documents\GitHub\Digital-Design\Seminario de solución de circuitos digitales\NAND\NAND\NAND\NAND 3mA.asc
-Start Time: Sun Sep 29 19:44:12 2024
+Circuit: * C:\Users\arnol\OneDrive\Documents\GitHub\Digital-Design\Seminario de solución de circuitos digitales\NAND3\NAND3\NAND3 2mA.asc
+Start Time: Mon Sep 30 18:29:14 2024
 Ignoring BSIM parameter XL
 Ignoring BSIM parameter XW
 Ignoring BSIM parameter XL
@@ -15,7 +15,8 @@ Warning: Ps = 0 is less than W.
 Warning: Pd = 0 is less than W.
 Warning: Ps = 0 is less than W.
 
-vcrucea: v(x)=v(a) AT 3.3
+
+Measurement "vcrucea" FAIL'ed
 
 Measurement "vila" FAIL'ed
 
@@ -26,10 +27,10 @@ Measurement "nmla" FAIL'ed
 Measurement "nmha" FAIL'ed
 
 Measurement "ria" FAIL'ed
-isca: MAX(id(m2))=6.28052e-12 FROM 0 TO 3.3
+isca: MAX(id(m2))=1.94456e-12 FROM 0 TO 3.3
 
 Measurement "vcruceb" FAIL'ed
-iscb: MAX(id(m2))=6.28052e-12 FROM 0 TO 3.3
+iscb: MAX(id(m2))=1.94456e-12 FROM 0 TO 3.3
 
 Measurement "vilb" FAIL'ed
 
@@ -41,5 +42,5 @@ Measurement "nmhb" FAIL'ed
 
 Measurement "rib" FAIL'ed
 
-Total elapsed time: 0.236 seconds.
+Total elapsed time: 0.394 seconds.
 
