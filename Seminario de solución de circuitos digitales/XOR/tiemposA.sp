@@ -1,0 +1,11 @@
+.meas dc ViLA find v(a) when v(x)=2.97
+.meas dc ViHA find v(a) when v(x)=0.33
+.meas dc nmLA find v(a) when v(x)=ViLA
+.meas dc nmHA find v(a) when v(x)=3.3-ViHA
+.meas dc riA param=ViHA-ViLA
+
+.meas tran bwA param=1/fallA
+.meas tran fallA trig v(x) val=0.33 rise=1 targ v(x) val=2.97 rise=1
+.meas tran risA trig v(x) val=2.97 fall=1 targ v(x) val=0.33 fall=1
+.meas tran tprA trig v(a) val=1.65 rise=1 targ v(x) val=1.65 fall=1
+.meas tran tpfA trig v(a) val=1.65 fall=1 targ v(x) val=1.65 rise=1

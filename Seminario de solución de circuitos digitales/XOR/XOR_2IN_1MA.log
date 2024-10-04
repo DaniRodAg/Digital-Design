@@ -1,0 +1,19 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\arnol\OneDrive\Documents\GitHub\Digital-Design\Seminario de solución de circuitos digitales\XOR\XOR_2IN_1MA.asc
+Start Time: Thu Oct  3 22:05:53 2024
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = modified trap
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.261 seconds.
+
