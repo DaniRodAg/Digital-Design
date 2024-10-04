@@ -1,0 +1,10 @@
+* C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NAND3\NAND3\NAND3\3inputs_NAND_3mA.asc
+M4 VDD C X VDD CMOSP l=.6u w=11.7u
+M6 X A N001 0 CMOSN l=0.6u w=4.2u
+M1 VDD B X VDD CMOSP l=.6u w=11.7u
+M2 VDD A X VDD CMOSP l=.6u w=11.7u
+M3 N001 B N002 0 CMOSN l=0.6u w=4.2u
+M5 N002 C 0 0 CMOSN l=0.6u w=4.2u
+.model NMOS NMOS
+.model PMOS PMOS
+.end

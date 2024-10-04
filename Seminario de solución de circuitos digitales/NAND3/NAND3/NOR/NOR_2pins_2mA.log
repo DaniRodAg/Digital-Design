@@ -1,0 +1,37 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NAND3\NAND3\NOR\NOR_2pins_2mA.asc
+Start Time: Thu Oct  3 10:45:01 2024
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Less than two connections to node b.  This node is used by v3.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+
+Measurement "bwa" FAIL'ed
+
+Measurement "falla" FAIL'ed
+risa=9.30437e-09 FROM 1.00607e-06 TO 1.01537e-06
+tpra=5.42831e-09 FROM 1.005e-06 TO 1.01043e-06
+
+Measurement "tpfa" FAIL'ed
+bwb: 1/fallb=1.07476e+08
+
+Measurement "risb" FAIL'ed
+fallb=9.30437e-09 FROM 1.00607e-06 TO 1.01537e-06
+tprb=-9.94572e-07 FROM 2.005e-06 TO 1.01043e-06
+
+Measurement "tpfb" FAIL'ed
+
+Total elapsed time: 0.125 seconds.
+

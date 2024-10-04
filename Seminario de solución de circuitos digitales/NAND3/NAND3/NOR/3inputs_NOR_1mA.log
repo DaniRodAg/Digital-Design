@@ -1,0 +1,31 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NAND3\NAND3\NOR\3inputs_NOR_1mA.asc
+Start Time: Thu Oct  3 02:49:16 2024
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = modified trap
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+bwa: 1/falla=2.46147e+07
+falla=4.06261e-08 FROM 8.02003e-06 TO 8.06065e-06
+risa=1.64705e-08 FROM 1.00736e-06 TO 1.02383e-06
+tpra=9.24054e-09 FROM 1.005e-06 TO 1.01424e-06
+tpfa=6.01936e-06 FROM 2.015e-06 TO 8.03436e-06
+bwb: 1/fallb=6.07145e+07
+risb=4.06261e-08 FROM 8.02003e-06 TO 8.06065e-06
+fallb=1.64705e-08 FROM 1.00736e-06 TO 1.02383e-06
+tprb=-9.90759e-07 FROM 2.005e-06 TO 1.01424e-06
+tpfb=4.01936e-06 FROM 4.015e-06 TO 8.03436e-06
+
+Total elapsed time: 0.105 seconds.
+
