@@ -1,0 +1,17 @@
+* C:\Users\arnol\OneDrive\Documents\GitHub\Digital-Design\Seminario de solución de circuitos digitales\XOR\XOR_2IN_1MA.asc
+XX1 A B VDD N001 nand1ma_2in_simb
+XX2 A N001 VDD N002 nand1ma_2in_simb
+XX3 N001 B VDD N003 nand1ma_2in_simb
+XX4 N002 N003 VDD N004 nand1ma_2in_simb
+
+* block symbol definitions
+.subckt nand1ma_2in_simb A B VDD X
+M1 N001 A 0 0 CMOSN l=0.6u w=4.2u
+M2 VDD B X VDD CMOSP l=.6u w=11.6u
+M3 X B N001 0 CMOSN l=0.6u w=4.2u
+M4 VDD A X VDD CMOSP l=.6u w=11.6u
+.ends nand1ma_2in_simb
+
+.model NMOS NMOS
+.model PMOS PMOS
+.end

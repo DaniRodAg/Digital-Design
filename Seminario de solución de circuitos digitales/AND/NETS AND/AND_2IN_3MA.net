@@ -1,0 +1,20 @@
+* C:\Users\arnol\OneDrive\Documents\GitHub\Digital-Design\Seminario de solución de circuitos digitales\AND\AND_2IN_3MA.asc
+XX1 A B N003 N001 nand3ma_2in_simb
+XX2 N001 N003 N002 inversor3ma
+
+* block symbol definitions
+.subckt nand3ma_2in_simb A B VDD X
+M1 N001 A 0 0 CMOSN l=0.6u w=10.8u
+M2 VDD B X VDD CMOSP l=.6u w=32.7u
+M3 X B N001 0 CMOSN l=0.6u w=10.8u
+M4 VDD A X VDD CMOSP l=.6u w=32.7u
+.ends nand3ma_2in_simb
+
+.subckt inversor3ma A VDD X
+M6 X A 0 0 CMOSN l=0.6u w=10.8u
+M5 VDD A X VDD CMOSP l=.6u w=39.6u
+.ends inversor3ma
+
+.model NMOS NMOS
+.model PMOS PMOS
+.end
