@@ -1,0 +1,15 @@
+* C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NAND3\NAND3\XNOR\Xnor_1mA.asc
+XX1 N002 N003 0 VDD N004 instancia_nor_1ma
+XX2 A N001 0 VDD N002 instancia_nor_1ma
+XX3 N001 B 0 VDD N003 instancia_nor_1ma
+XX4 A B 0 VDD N001 instancia_nor_1ma
+
+* block symbol definitions
+.subckt instancia_nor_1ma A B tierra VDD X
+M1 X B tierra tierra CMOSN l=0.6u w=4.2u
+M2 VDD A N001 VDD CMOSP l=.6u w=13.5u
+M3 X A tierra tierra CMOSN l=0.6u w=4.2u
+M5 N001 B X N001 CMOSP l=.6u w=13.5u
+.ends instancia_nor_1ma
+
+.end

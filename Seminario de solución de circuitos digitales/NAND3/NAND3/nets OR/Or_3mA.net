@@ -1,0 +1,18 @@
+* C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NAND3\NAND3\XNOR\Or_3mA.asc
+XX1 A B 0 VDD N001 instancia_nor_3ma
+XX2 N001 0 VDD X inversor3ma
+
+* block symbol definitions
+.subckt instancia_nor_3ma A B tierra VDD X
+M1 X B tierra tierra CMOSN l=0.6u w=10.8u
+M2 VDD A N001 VDD CMOSP l=.6u w=39.9u
+M3 X A tierra tierra CMOSN l=0.6u w=10.8u
+M5 N001 B X N001 CMOSP l=.6u w=39.9u
+.ends instancia_nor_3ma
+
+.subckt inversor3ma A tierra VDD X
+M1 X A tierra tierra CMOSN l=0.6u w=10.8u
+M2 VDD A X VDD CMOSP l=.6u w=39.6u
+.ends inversor3ma
+
+.end

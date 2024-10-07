@@ -1,6 +1,0 @@
-* C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NAND3\NAND3\NOR\NOR_2pins_3mA.asc
-M1 X C 0 0 CMOSN l=0.6u w=4.2u
-M2 VDD 0 N001 VDD CMOSP l=.6u w=39.9u
-M3 X 0 0 0 CMOSN l=0.6u w=4.2u
-M5 N001 C X N001 CMOSP l=.6u w=39.9u
-.end

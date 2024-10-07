@@ -1,0 +1,20 @@
+* C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NAND3\NAND3\OR\Or_1mA.asc
+V1 A 0 PULSE(0 3.3 1u 10n 10n 1u 2u)
+V2 VDD 0 3.3V
+V3 B 0 PULSE(0 3.3 2u 10n 10n 2u 4u)
+XX1 N001 0 VDD X inversor1ma
+XX2 A B 0 VDD N001 instancia_nor_1ma
+
+* block symbol definitions
+.subckt inversor1ma A tierra VDD X
+M1 X A tierra tierra CMOSN l=0.6u w=4.2u
+M2 VDD A X VDD CMOSP l=.6u w=14u
+.ends inversor1ma
+
+.subckt instancia_nor_1ma A B tierra VDD X
+M1 X B tierra tierra CMOSN l=0.6u w=4.2u
+M2 VDD A N001 VDD CMOSP l=.6u w=13.5u
+M3 X A tierra tierra CMOSN l=0.6u w=4.2u
+M5 N001 B X N001 CMOSP l=.6u w=13.5u
+.ends instancia_nor_1ma
+.end

@@ -1,0 +1,33 @@
+# File:		mAMIs05.xst
+# For:		Cross-section process definition file
+# Vendor:		MOSIS/AMI
+# Technology:	0.5u (Lambda = 0.3um) / N-well
+# TBased on:	mAMIn08.xst
+# ************************************************************************
+#
+#	L-Edit
+#Step	Layer Name		Depth	Label	[Angle[offset]]	Comment
+#-------	--------------------------	---------	----------	----------------------	---------------------
+gd	 -			 10.00	p-			#  1. Substrate
+id	"Well X"		  3.00	n-			#  2. n-Well
+gd	 -			  0.60	-			#  3. Field Oxide
+e	 Active 		  0.60	-	45		#  4. 
+gd	 -			  0.04	-			#  5. Gate Oxide
+gd	 Poly			  0.40	-			#  6. Polysilicon
+e	 NotPoly		  0.44	-	45		#  7.
+id	 ActPSelNotPoly		  0.90	p+	90	0	#  8. p-Implant
+id	 ActNSelNotPoly		  0.90	n+	90	0	#  9. n-Implant
+gd	 -			  0.90	-			# 10. 
+e	"P1/P2/Act Contact"	  0.90	-	60		# 11.
+gd	 Metal1 		  0.60	-			# 12. Metal 1
+e	"Not Metal1"		  0.60	-	45		# 13.
+gd	 -			  1.00 	-			# 14. 
+e	 Via1			  1.00 	-	60		# 15.
+gd	 Metal2 		  1.15	-			# 16. Metal 2
+e	 "Not Metal2"		  1.15	-	45		# 17.
+gd	 -			  1.00 	-			# 18. 
+e	 Via2			  1.00 	-	60		# 19.
+gd	 Metal3 		  1.15	-			# 20. Metal 3
+e	 "Not Metal3"		  1.15	-	45		# 21.
+gd	 -			  2.00 	-			# 22. Overglass
+e	 Overglass		  2.00 	-			# 23.

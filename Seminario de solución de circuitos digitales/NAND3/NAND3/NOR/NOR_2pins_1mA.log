@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Daniel\UDG\7mo\Seminario de solución de circuitos digitales\NAND3\NAND3\NOR\NOR_2pins_1mA.asc
-Start Time: Thu Oct  3 02:43:37 2024
+Start Time: Fri Oct  4 20:09:00 2024
 Ignoring BSIM parameter XL
 Ignoring BSIM parameter XW
 Ignoring BSIM parameter XL
@@ -28,5 +28,5 @@ fallb=3.05725e-08 FROM 1.00939e-06 TO 1.03996e-06
 tprb=-9.82923e-07 FROM 2.005e-06 TO 1.02208e-06
 tpfb=1.99399e-08 FROM 4.015e-06 TO 4.03494e-06
 
-Total elapsed time: 0.065 seconds.
+Total elapsed time: 0.073 seconds.
 
